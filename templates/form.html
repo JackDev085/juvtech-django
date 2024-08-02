@@ -1,0 +1,157 @@
+{% extends "base.html" %} {% load static %} {% block extracss %} <link
+rel="stylesheet" href={% static "css/form.css" %}> {% endblock extracss %}
+{%block content %}
+
+<form
+  action="{% url 'ferramentas:submit' %}"
+  method="post"
+  enctype="multipart/form-data"
+>
+  {% csrf_token %}
+  <h1>Formulário de relatório para o JuvTech</h1>
+
+  <label for="nome">Nome completo:</label>
+  <input
+    type="text"
+    id="nome"
+    name="nome"
+    placeholder="Ex: Maria José Pereira"
+    required
+  /><br /><br />
+
+  <label for="cuca">Cuca de atuação:</label>
+  <select id="cuca" name="cuca">
+    <option value="PICI">PICI</option>
+    <option value="JOSE WALTER">JOSE WALTER</option>
+    <option value="BARRA">BARRA</option>
+  </select>
+
+  <label for="data_atual">Data do relatório:</label>
+  <input
+    type="text"
+    id="data_atual"
+    name="data_atual"
+    placeholder="Ex: 22 de junho"
+    required
+  /><br /><br />
+
+  <label for="periodo">Escolha o período do relatório:</label>
+  <select id="periodo" name="periodo">
+    <option value="MAIO - JUNHO">MAIO - JUNHO</option>
+    <option value="JUNHO - JULHO">JUNHO - JULHO</option>
+    <option value="JULHO - AGOSTO">JULHO - AGOSTO</option>
+    <option value="AGOSTO - SETEMBRO">AGOSTO - SETEMBRO</option>
+    <option value="SETEMBRO - OUTUBRO">SETEMBRO - OUTUBRO</option>
+    <option value="OUTUBRO - NOVEMBRO">OUTUBRO - NOVEMBRO</option>
+    <option value="NOVEMBRO - DEZEMBRO">NOVEMBRO - DEZEMBRO</option>
+    <option value="DEZEMBRO - JANEIRO">DEZEMBRO - JANEIRO</option>
+  </select>
+
+  <label for="atividades_realizadas">Atividades realizadas:</label>
+  <textarea
+    id="atividades_realizadas"
+    name="atividades_realizadas"
+    placeholder="Nesse mês pude aprender mais sobre..."
+    required
+  ></textarea
+  ><br /><br />
+
+  <label for="problemas_enfrentados">Problemas enfrentados:</label>
+  <textarea
+    id="problemas_enfrentados"
+    name="problemas_enfrentados"
+    placeholder="Nesse enfrentei um problema em..."
+    required
+  ></textarea
+  ><br /><br />
+
+  <label for="curiosidade_aprendizado">Curiosidade de algum conteúdo:</label>
+  <textarea
+    id="curiosidade_aprendizado"
+    name="curiosidade_aprendizado"
+    placeholder="Queria aprender mais sobre o assunto..."
+    required
+  ></textarea
+  ><br /><br />
+
+  <label for="pontos_forts">Pontos a Melhorar:</label>
+  <textarea
+    id="pontos_forts"
+    name="pontos_forts"
+    placeholder="Acredito que a monitoria seria mais proveitosa se..."
+    required
+  ></textarea
+  ><br /><br />
+
+  <label for="imagem1">Selecione uma imagem (PNG/JPG/JPEG):</label>
+  <input type="file" id="imagem1" name="imagem1" accept="image/*" /><br /><br />
+  <label for="txt_img1">Texto da imagem 1:</label>
+  <textarea
+    id="txt_img1"
+    name="txt_img1"
+    placeholder="(EX: 23/04/2024 / Atividade sobre Portugol)"
+    required
+  ></textarea
+  ><br /><br />
+
+  <label for="imagem2">Selecione uma imagem (PNG/JPG/JPEG):</label>
+  <input type="file" id="imagem2" name="imagem2" accept="image/*" /><br /><br />
+  <label for="txt_img2">Texto da imagem 2:</label>
+  <textarea
+    id="txt_img2"
+    name="txt_img2"
+    placeholder="(EX: 23/04/2024 / Atividade sobre Portugol)"
+    required
+  ></textarea
+  ><br /><br />
+
+  <label for="imagem3">Selecione uma imagem (PNG/JPG/JPEG):</label>
+  <input type="file" id="imagem3" name="imagem3" accept="image/*" /><br /><br />
+  <label for="txt_img3">Texto da imagem 3:</label>
+  <textarea
+    id="txt_img3"
+    name="txt_img3"
+    placeholder="(EX: 23/04/2024 / Atividade sobre Portugol)"
+    required
+  ></textarea
+  ><br /><br />
+
+  <label for="imagem4">Selecione uma imagem (PNG/JPG/JPEG):</label>
+  <input type="file" id="imagem4" name="imagem4" accept="image/*" /><br /><br />
+  <label for="txt_img4">Texto da imagem 4:</label>
+  <textarea
+    id="txt_img4"
+    name="txt_img4"
+    placeholder="(EX: 23/04/2024 / Atividade sobre Portugol)"
+    required
+  ></textarea
+  ><br /><br />
+
+  <hr />
+  <h2>Imagens Opcionais⬇</h2>
+  <hr />
+  <br />
+
+  <label for="imagem5">Selecione uma imagem (PNG/JPG/JPEG):</label>
+  <input type="file" id="imagem5" name="imagem5" accept="image/*" /><br /><br />
+  <label for="txt_img5">Texto da imagem 5:</label>
+  <textarea
+    id="txt_img5"
+    name="txt_img5"
+    placeholder="(EX: 23/04/2024 / Atividade sobre Portugol)"
+  ></textarea
+  ><br /><br />
+
+  <label for="imagem6">Selecione uma imagem (PNG/JPG/JPEG):</label>
+  <input type="file" id="imagem6" name="imagem6" accept="image/*" /><br /><br />
+  <label for="txt_img6">Texto da imagem 6:</label>
+  <textarea
+    id="txt_img6"
+    name="txt_img6"
+    placeholder="(EX: 23/04/2024 / Atividade sobre Portugol)"
+  ></textarea
+  ><br /><br />
+
+  <button type="submit">Enviar</button>
+</form>
+{% endblock content %}

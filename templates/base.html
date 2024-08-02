@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    {% block extracss %} {% endblock extracss %}
+    <title>{{title.title}}</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <h1>Juvtech</h1>
+      </div>
+      <div class="nav">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'ferramentas:lista_relatorios' %}">Relatórios</a>
+        <a href="{% url 'home' %}">Perfil❌</a>
+        {% if user.is_authenticated %}
+        <p>Olá, {{ user.username }}!</p>
+        <a id="red" href="{% url 'logout' %}">Logout</a>
+        {% else %}
+        <a href="{% url 'login' %}">Login</a> |
+        <a id="blue" href="{% url 'signup' %}">Signup</a>
+        {% endif %}
+      </div>
+    </header>
+    <div class="content">{% block content %}{% endblock content %}</div>
+    {% block extrajs %} {% endblock extrajs %}
+  </body>
+</html>

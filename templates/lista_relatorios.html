@@ -1,0 +1,35 @@
+{% extends "base.html" %}{% load static %}
+
+{% block extracss %}
+<link rel="stylesheet" href={% static "css/lista_relatorios.css" %}>
+{% endblock extracss %}
+
+
+{% block content %}
+<div class="content">
+{% if relatorios %}
+<div class="relatorios">
+    {% for relatorio in relatorios %}
+    
+    <div class="card-relatorio" data-report-url="{{ relatorio.link_relatorio }}">
+    </div>
+    <h2>{{ relatorio.nome }}</h2>
+    <span>{{ relatorio.created_at }}</span>
+    <h2>Se ao clicar no documento o dowload não iniciar, copie o link abaixo e cole no navegador para fazer o dowload do documento</h2>
+    <a id="button_copy" href="{{ relatorio.link_relatorio }}" download>Copiar link</a>
+
+    {% endfor %}
+{% else %}
+</div>
+<h1>Nenhum relatório encontrado</h2>
+{% endif %}
+
+</div>
+{% endblock content %}
+{% block extrajs %}
+<script src={% static "js/lista_relatorio.js" %}></script>
+{% endblock extrajs %}
+
+
+
+

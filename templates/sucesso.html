@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block extracss %}
+<link rel="stylesheet" href="{% static 'css/sucesso.css' %}">
+{% endblock extracss %}
+{% block content %}
+<h1>Sucesso ao enviar o formulario</h1>
+<p>Baixe-o no link abaixo o arquivo com os dados enviados</p>
+{% url "ferramentas:lista_relatorios" %}
+{% endblock content %}
+

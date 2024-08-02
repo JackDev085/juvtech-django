@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% load static %} {% block extracss %}
+<link rel="stylesheet" href="{% static 'css/ferramentas.css' %}" />
+{% endblock extracss %} {% load static %} {% block content %}
+<div class="ferramentas">
+  <h1>Ferramentas</h1>
+  <div class="card-ferramenta">
+    <a href="{% url 'ferramentas:relatorio' %}">
+      <h2>Gerador de relatório</h2>
+    </a>
+  </div>
+</div>
+<div>{% endblock content %}</div>

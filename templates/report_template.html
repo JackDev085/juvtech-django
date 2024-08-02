@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Relatório</title>
+</head>
+<body>
+    <h1>RELATÓRIO</h1>
+    <p><strong>NOME COMPLETO:</strong> {{ nome }}</p>
+    <p><strong>PROJETO:</strong> PROGRAMA FUTUROS</p>
+    <p><strong>PERÍODO:</strong> {{ periodo }}</p>
+    <p><strong>CUCA:</strong> {{cuca}}</p>
+    
+    <h2>Atividades Realizadas</h2>
+    <p>{{ atividades_realizadas }}</p>
+    
+    <h2>Desafios Enfrentados</h2>
+    <p>{{ problemas_enfrentados }}</p>
+    
+    <h2>Curiosidade em Aprender</h2>
+    <p>{{ curiosidade_aprendizado }}</p>
+    
+    <h2>Pontos a Melhorar</h2>
+    <p>{{ pontos_forts }}</p>
+    
+    <p>Fortaleza, {{ data_atual }} de 2024.</p>
+    <p>_____________________________________________________________</p>
+    <p>{{ nome }}</p>
+
+    <h2>Registro Fotográfico</h2>
+    {% if imagem1 %}
+        <img src="{{ imagem1 }}" alt="Imagem 1">
+        <p>{{ txt_img1 }}</p>
+    {% endif %}
+    {% if imagem2 %}
+        <img src="{{ imagem2 }}" alt="Imagem 2">
+        <p>{{ txt_img2 }}</p>
+    {% endif %}
+    {% if imagem3 %}
+        <img src="{{ imagem3 }}" alt="Imagem 3">
+        <p>{{ txt_img3 }}</p>
+    {% endif %}
+    {% if imagem4 %}
+        <img src="{{ imagem4 }}" alt="Imagem 4">
+        <p>{{txt_img4}}</p>
+    {% endif %}
+
+    {% if imagem5 %}
+        <img src="{{ imagem5 }}" alt="Imagem 5">
+        <p>{{txt_img6}}</p>
+    {% endif %}
+
+    {% if imagem6 %}
+        <img src="{{ imagem6 }}" alt="Imagem 6">
+        <p>{{txt_img6}}</p>
+    {% endif %}
+</body>
+</html>

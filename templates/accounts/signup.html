@@ -1,0 +1,21 @@
+<!-- accounts/templates/accounts/signup.html -->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <title>Signup</title>
+</head>
+<body>
+    <main>
+        <h2>Signup</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Signup</button>
+        </form>
+    </main>
+</body>
+</html>
