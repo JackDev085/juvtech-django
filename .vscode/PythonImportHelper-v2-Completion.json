@@ -259,14 +259,6 @@
         "documentation": {}
     },
     {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -308,22 +300,6 @@
     },
     {
         "label": "redirect",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "redirect",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
@@ -389,14 +365,6 @@
         "documentation": {}
     },
     {
-        "label": "CustomUser",
-        "importPath": "accounts.models",
-        "description": "accounts.models",
-        "isExtraImport": true,
-        "detail": "accounts.models",
-        "documentation": {}
-    },
-    {
         "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
@@ -414,14 +382,6 @@
     },
     {
         "label": "time",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -477,70 +437,6 @@
         "documentation": {}
     },
     {
-        "label": "HttpResponse",
-        "importPath": "django.http",
-        "description": "django.http",
-        "isExtraImport": true,
-        "detail": "django.http",
-        "documentation": {}
-    },
-    {
-        "label": "csrf_exempt",
-        "importPath": "django.views.decorators.csrf",
-        "description": "django.views.decorators.csrf",
-        "isExtraImport": true,
-        "detail": "django.views.decorators.csrf",
-        "documentation": {}
-    },
-    {
-        "label": "DocxTemplate",
-        "importPath": "docxtpl",
-        "description": "docxtpl",
-        "isExtraImport": true,
-        "detail": "docxtpl",
-        "documentation": {}
-    },
-    {
-        "label": "InlineImage",
-        "importPath": "docxtpl",
-        "description": "docxtpl",
-        "isExtraImport": true,
-        "detail": "docxtpl",
-        "documentation": {}
-    },
-    {
-        "label": "Cm",
-        "importPath": "docx.shared",
-        "description": "docx.shared",
-        "isExtraImport": true,
-        "detail": "docx.shared",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -550,55 +446,19 @@
         "documentation": {}
     },
     {
-        "label": "cloudinary.uploader",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "cloudinary.uploader",
-        "description": "cloudinary.uploader",
-        "detail": "cloudinary.uploader",
-        "documentation": {}
-    },
-    {
-        "label": "cloudinary",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "cloudinary",
-        "description": "cloudinary",
-        "detail": "cloudinary",
-        "documentation": {}
-    },
-    {
-        "label": "hashlib",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "hashlib",
-        "description": "hashlib",
-        "detail": "hashlib",
-        "documentation": {}
-    },
-    {
-        "label": "uuid",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "uuid",
-        "description": "uuid",
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "login_required",
-        "importPath": "django.contrib.auth.decorators",
-        "description": "django.contrib.auth.decorators",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.decorators",
-        "documentation": {}
-    },
-    {
         "label": "get_asgi_application",
         "importPath": "django.core.asgi",
         "description": "django.core.asgi",
         "isExtraImport": true,
         "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
         "documentation": {}
     },
     {
@@ -641,15 +501,6 @@
         "description": "dotenv",
         "isExtraImport": true,
         "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "cloudinary.api",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "cloudinary.api",
-        "description": "cloudinary.api",
-        "detail": "cloudinary.api",
         "documentation": {}
     },
     {
@@ -842,114 +693,6 @@
         "documentation": {}
     },
     {
-        "label": "index",
-        "kind": 2,
-        "importPath": "ferramentas.views",
-        "description": "ferramentas.views",
-        "peekOfCode": "def index(request):\n    return render(request, 'index.html', { 'title': \"Home\"})\n@login_required\ndef relatorio(request):\n    return render(request, 'form.html')\ndef termos(request):\n    return render(request, 'termos.html')\n@login_required\ndef lista_relatorios(request):\n    relatorios = Formulario.objects.filter(user=request.user.id)",
-        "detail": "ferramentas.views",
-        "documentation": {}
-    },
-    {
-        "label": "relatorio",
-        "kind": 2,
-        "importPath": "ferramentas.views",
-        "description": "ferramentas.views",
-        "peekOfCode": "def relatorio(request):\n    return render(request, 'form.html')\ndef termos(request):\n    return render(request, 'termos.html')\n@login_required\ndef lista_relatorios(request):\n    relatorios = Formulario.objects.filter(user=request.user.id)\n    print(request.user.id)\n    print(relatorios)\n    return render(request, 'lista_relatorios.html', {'relatorios': relatorios})",
-        "detail": "ferramentas.views",
-        "documentation": {}
-    },
-    {
-        "label": "termos",
-        "kind": 2,
-        "importPath": "ferramentas.views",
-        "description": "ferramentas.views",
-        "peekOfCode": "def termos(request):\n    return render(request, 'termos.html')\n@login_required\ndef lista_relatorios(request):\n    relatorios = Formulario.objects.filter(user=request.user.id)\n    print(request.user.id)\n    print(relatorios)\n    return render(request, 'lista_relatorios.html', {'relatorios': relatorios})\nBASE_DIR = Path(__file__).resolve().parent.parent\nTEMPLATES_FOLDER = BASE_DIR / 'templates'",
-        "detail": "ferramentas.views",
-        "documentation": {}
-    },
-    {
-        "label": "lista_relatorios",
-        "kind": 2,
-        "importPath": "ferramentas.views",
-        "description": "ferramentas.views",
-        "peekOfCode": "def lista_relatorios(request):\n    relatorios = Formulario.objects.filter(user=request.user.id)\n    print(request.user.id)\n    print(relatorios)\n    return render(request, 'lista_relatorios.html', {'relatorios': relatorios})\nBASE_DIR = Path(__file__).resolve().parent.parent\nTEMPLATES_FOLDER = BASE_DIR / 'templates'\nUPLOAD_FOLDER = BASE_DIR / 'uploads'\n# Certifique-se de que o diretório de uploads exista\nif not os.path.exists(UPLOAD_FOLDER):",
-        "detail": "ferramentas.views",
-        "documentation": {}
-    },
-    {
-        "label": "generate_unique_hash",
-        "kind": 2,
-        "importPath": "ferramentas.views",
-        "description": "ferramentas.views",
-        "peekOfCode": "def generate_unique_hash():\n    unique_string = f\"{uuid.uuid4()}_{datetime.now().timestamp()}\"\n    hash_object = hashlib.sha256(unique_string.encode())\n    hex_dig = hash_object.hexdigest()\n    return hex_dig[:10]\n@login_required\n@csrf_exempt\ndef submit(request):\n    if request.method == 'POST':\n        try:",
-        "detail": "ferramentas.views",
-        "documentation": {}
-    },
-    {
-        "label": "submit",
-        "kind": 2,
-        "importPath": "ferramentas.views",
-        "description": "ferramentas.views",
-        "peekOfCode": "def submit(request):\n    if request.method == 'POST':\n        try:\n            data = request.POST.dict()\n            files = request.FILES\n            # Criação da instância do formulário\n            formulario = Formulario(\n                user=CustomUser.objects.get(id=request.user.id),\n                nome=data.get('nome'),\n                cuca=data.get('cuca'),",
-        "detail": "ferramentas.views",
-        "documentation": {}
-    },
-    {
-        "label": "BASE_DIR",
-        "kind": 5,
-        "importPath": "ferramentas.views",
-        "description": "ferramentas.views",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nTEMPLATES_FOLDER = BASE_DIR / 'templates'\nUPLOAD_FOLDER = BASE_DIR / 'uploads'\n# Certifique-se de que o diretório de uploads exista\nif not os.path.exists(UPLOAD_FOLDER):\n    os.makedirs(UPLOAD_FOLDER)\n@login_required\ndef index(request):\n    return render(request, 'index.html', { 'title': \"Home\"})\n@login_required",
-        "detail": "ferramentas.views",
-        "documentation": {}
-    },
-    {
-        "label": "TEMPLATES_FOLDER",
-        "kind": 5,
-        "importPath": "ferramentas.views",
-        "description": "ferramentas.views",
-        "peekOfCode": "TEMPLATES_FOLDER = BASE_DIR / 'templates'\nUPLOAD_FOLDER = BASE_DIR / 'uploads'\n# Certifique-se de que o diretório de uploads exista\nif not os.path.exists(UPLOAD_FOLDER):\n    os.makedirs(UPLOAD_FOLDER)\n@login_required\ndef index(request):\n    return render(request, 'index.html', { 'title': \"Home\"})\n@login_required\ndef relatorio(request):",
-        "detail": "ferramentas.views",
-        "documentation": {}
-    },
-    {
-        "label": "UPLOAD_FOLDER",
-        "kind": 5,
-        "importPath": "ferramentas.views",
-        "description": "ferramentas.views",
-        "peekOfCode": "UPLOAD_FOLDER = BASE_DIR / 'uploads'\n# Certifique-se de que o diretório de uploads exista\nif not os.path.exists(UPLOAD_FOLDER):\n    os.makedirs(UPLOAD_FOLDER)\n@login_required\ndef index(request):\n    return render(request, 'index.html', { 'title': \"Home\"})\n@login_required\ndef relatorio(request):\n    return render(request, 'form.html')",
-        "detail": "ferramentas.views",
-        "documentation": {}
-    },
-    {
-        "label": "BASE_DIR",
-        "kind": 5,
-        "importPath": "ferramentas.views",
-        "description": "ferramentas.views",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nTEMPLATES_FOLDER = BASE_DIR / 'templates'\nUPLOAD_FOLDER = BASE_DIR / 'uploads'\n# Certifique-se de que o diretório de uploads exista\nif not os.path.exists(UPLOAD_FOLDER):\n    os.makedirs(UPLOAD_FOLDER)\ndef generate_unique_hash():\n    unique_string = f\"{uuid.uuid4()}_{datetime.now().timestamp()}\"\n    hash_object = hashlib.sha256(unique_string.encode())\n    hex_dig = hash_object.hexdigest()",
-        "detail": "ferramentas.views",
-        "documentation": {}
-    },
-    {
-        "label": "TEMPLATES_FOLDER",
-        "kind": 5,
-        "importPath": "ferramentas.views",
-        "description": "ferramentas.views",
-        "peekOfCode": "TEMPLATES_FOLDER = BASE_DIR / 'templates'\nUPLOAD_FOLDER = BASE_DIR / 'uploads'\n# Certifique-se de que o diretório de uploads exista\nif not os.path.exists(UPLOAD_FOLDER):\n    os.makedirs(UPLOAD_FOLDER)\ndef generate_unique_hash():\n    unique_string = f\"{uuid.uuid4()}_{datetime.now().timestamp()}\"\n    hash_object = hashlib.sha256(unique_string.encode())\n    hex_dig = hash_object.hexdigest()\n    return hex_dig[:10]",
-        "detail": "ferramentas.views",
-        "documentation": {}
-    },
-    {
-        "label": "UPLOAD_FOLDER",
-        "kind": 5,
-        "importPath": "ferramentas.views",
-        "description": "ferramentas.views",
-        "peekOfCode": "UPLOAD_FOLDER = BASE_DIR / 'uploads'\n# Certifique-se de que o diretório de uploads exista\nif not os.path.exists(UPLOAD_FOLDER):\n    os.makedirs(UPLOAD_FOLDER)\ndef generate_unique_hash():\n    unique_string = f\"{uuid.uuid4()}_{datetime.now().timestamp()}\"\n    hash_object = hashlib.sha256(unique_string.encode())\n    hex_dig = hash_object.hexdigest()\n    return hex_dig[:10]\n@login_required",
-        "detail": "ferramentas.views",
-        "documentation": {}
-    },
-    {
         "label": "application",
         "kind": 5,
         "importPath": "src.asgi",
@@ -963,7 +706,7 @@
         "kind": 5,
         "importPath": "src.settings",
         "description": "src.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nIS_HEROKU_APP = \"DYNO\" in os.environ and not \"CI\" in os.environ\n# Configurações do Django\nSECRET_KEY = os.getenv(\"DJANGO_SECRET_KEY\")\nDEBUG = False\nif IS_HEROKU_APP:\n    ALLOWED_HOSTS = [\"*\"]\nelse:\n    ALLOWED_HOSTS = [\".localhost\", \"127.0.0.1\", \"[::1]\", \"0.0.0.0\"]\n# settings.py",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nIS_HEROKU_APP = \"DYNO\" in os.environ and not \"CI\" in os.environ\n# Configurações do Django\nSECRET_KEY = os.getenv(\"DJANGO_SECRET_KEY\")\nDEBUG = True\nif IS_HEROKU_APP:\n    DEBUG =False\nif IS_HEROKU_APP:\n    ALLOWED_HOSTS = [\"*\"]\nelse:",
         "detail": "src.settings",
         "documentation": {}
     },
@@ -972,7 +715,7 @@
         "kind": 5,
         "importPath": "src.settings",
         "description": "src.settings",
-        "peekOfCode": "IS_HEROKU_APP = \"DYNO\" in os.environ and not \"CI\" in os.environ\n# Configurações do Django\nSECRET_KEY = os.getenv(\"DJANGO_SECRET_KEY\")\nDEBUG = False\nif IS_HEROKU_APP:\n    ALLOWED_HOSTS = [\"*\"]\nelse:\n    ALLOWED_HOSTS = [\".localhost\", \"127.0.0.1\", \"[::1]\", \"0.0.0.0\"]\n# settings.py\nAUTH_USER_MODEL = 'accounts.CustomUser'",
+        "peekOfCode": "IS_HEROKU_APP = \"DYNO\" in os.environ and not \"CI\" in os.environ\n# Configurações do Django\nSECRET_KEY = os.getenv(\"DJANGO_SECRET_KEY\")\nDEBUG = True\nif IS_HEROKU_APP:\n    DEBUG =False\nif IS_HEROKU_APP:\n    ALLOWED_HOSTS = [\"*\"]\nelse:\n    ALLOWED_HOSTS = [\".localhost\", \"127.0.0.1\", \"[::1]\", \"0.0.0.0\"]",
         "detail": "src.settings",
         "documentation": {}
     },
@@ -981,7 +724,7 @@
         "kind": 5,
         "importPath": "src.settings",
         "description": "src.settings",
-        "peekOfCode": "SECRET_KEY = os.getenv(\"DJANGO_SECRET_KEY\")\nDEBUG = False\nif IS_HEROKU_APP:\n    ALLOWED_HOSTS = [\"*\"]\nelse:\n    ALLOWED_HOSTS = [\".localhost\", \"127.0.0.1\", \"[::1]\", \"0.0.0.0\"]\n# settings.py\nAUTH_USER_MODEL = 'accounts.CustomUser'\nINSTALLED_APPS = [\n    'django.contrib.admin',",
+        "peekOfCode": "SECRET_KEY = os.getenv(\"DJANGO_SECRET_KEY\")\nDEBUG = True\nif IS_HEROKU_APP:\n    DEBUG =False\nif IS_HEROKU_APP:\n    ALLOWED_HOSTS = [\"*\"]\nelse:\n    ALLOWED_HOSTS = [\".localhost\", \"127.0.0.1\", \"[::1]\", \"0.0.0.0\"]\n# settings.py\nAUTH_USER_MODEL = 'accounts.CustomUser'",
         "detail": "src.settings",
         "documentation": {}
     },
@@ -990,7 +733,7 @@
         "kind": 5,
         "importPath": "src.settings",
         "description": "src.settings",
-        "peekOfCode": "DEBUG = False\nif IS_HEROKU_APP:\n    ALLOWED_HOSTS = [\"*\"]\nelse:\n    ALLOWED_HOSTS = [\".localhost\", \"127.0.0.1\", \"[::1]\", \"0.0.0.0\"]\n# settings.py\nAUTH_USER_MODEL = 'accounts.CustomUser'\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',",
+        "peekOfCode": "DEBUG = True\nif IS_HEROKU_APP:\n    DEBUG =False\nif IS_HEROKU_APP:\n    ALLOWED_HOSTS = [\"*\"]\nelse:\n    ALLOWED_HOSTS = [\".localhost\", \"127.0.0.1\", \"[::1]\", \"0.0.0.0\"]\n# settings.py\nAUTH_USER_MODEL = 'accounts.CustomUser'\nINSTALLED_APPS = [",
         "detail": "src.settings",
         "documentation": {}
     },
@@ -1190,24 +933,6 @@
         "description": "manage",
         "peekOfCode": "def main():\n    load_dotenv()\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'src.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
         "detail": "manage",
-        "documentation": {}
-    },
-    {
-        "label": "BASE_DIR",
-        "kind": 5,
-        "importPath": "teste",
-        "description": "teste",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Faça o upload do arquivo\nresponse = cloudinary.uploader.upload(BASE_DIR/\"juvtech/template.docx\", resource_type=\"raw\")\n# Print do URL do arquivo no Cloudinary\nprint(response['url'])",
-        "detail": "teste",
-        "documentation": {}
-    },
-    {
-        "label": "response",
-        "kind": 5,
-        "importPath": "teste",
-        "description": "teste",
-        "peekOfCode": "response = cloudinary.uploader.upload(BASE_DIR/\"juvtech/template.docx\", resource_type=\"raw\")\n# Print do URL do arquivo no Cloudinary\nprint(response['url'])",
-        "detail": "teste",
         "documentation": {}
     }
 ]

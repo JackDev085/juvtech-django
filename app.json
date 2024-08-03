@@ -1,8 +1,8 @@
 {
-  "name": "Start on Heroku: Python",
-  "description": "A barebones Python app, which can easily be deployed to Heroku.",
+  "name": "Pojeto juvtech",
+  "description": "Um gerador e armazenador de relatórios",
   "image": "heroku/python",
-  "repository": "https://github.com/heroku/python-getting-started",
+  "repository": "https://github.com/JackDev085/juvtech-django",
   "keywords": ["python", "django"],
   "env": {
     "DJANGO_SECRET_KEY": {
